@@ -1,0 +1,57 @@
+{
+  "sortedMiddleware": [],
+  "middleware": {},
+  "functions": {
+    "/api/hello": {
+      "env": [],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/hello.js"
+      ],
+      "name": "pages/api/hello",
+      "page": "/api/hello",
+      "regexp": "^/api/hello$",
+      "wasm": [],
+      "assets": []
+    },
+    "/dynamic/[page]": {
+      "env": [
+        "NEXT_PRIVATE_MINIMAL_MODE",
+        "__NEXT_TEST_MAX_ISR_CACHE",
+        "NODE_DEBUG"
+      ],
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/553.js",
+        "server/pages/dynamic/[page].js"
+      ],
+      "name": "pages/dynamic/[page]",
+      "page": "/dynamic/[page]",
+      "regexp": "^/dynamic/(?<page>[^/]+?)$",
+      "wasm": [],
+      "assets": []
+    },
+    "/static/[page]": {
+      "env": [
+        "NEXT_PRIVATE_MINIMAL_MODE",
+        "__NEXT_TEST_MAX_ISR_CACHE",
+        "NODE_DEBUG"
+      ],
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/553.js",
+        "server/pages/static/[page].js"
+      ],
+      "name": "pages/static/[page]",
+      "page": "/static/[page]",
+      "regexp": "^/static/(?<page>[^/]+?)$",
+      "wasm": [],
+      "assets": []
+    }
+  },
+  "version": 1
+}

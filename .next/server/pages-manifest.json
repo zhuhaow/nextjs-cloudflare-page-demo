@@ -1,0 +1,10 @@
+{
+  "/api/hello": "pages/api/hello.js",
+  "/dynamic/[page]": "pages/dynamic/[page].js",
+  "/static/[page]": "pages/static/[page].js",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
