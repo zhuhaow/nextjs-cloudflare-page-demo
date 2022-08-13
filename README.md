@@ -1,1 +1,1 @@
-Demo for https://zhuhaow.me/deploying-full-nextjs-site-on-cloudflare-are-we-there-yet
+Demo for https://zhuhaow.me/deploy-full-nextjs-site-on-cloudflare-are-we-there-yet
